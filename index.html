@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="M9VScI9rZ5za9ClM5p6VeEybh1wNSbTqZAh_DBUgjX8" />
+  <title>NVOS — Software & Frontend Developer</title>
+  <meta name="description" content="Personal portfolio and projects of NVOS (@mechanoid7). Focused on Angular, TypeScript, modern Web Frontend architectures, and Android applications.">
+  <meta name="author" content="NVOS">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="NVOS — Software & Frontend Developer">
+  <meta property="og:description" content="Portfolio of NVOS. Specializing in Angular, Web Frontend, and Android development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mechanoid7.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-sky-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Background decorative glows -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="bg-glow-top"></div>
+    <div class="bg-glow-mid"></div>
+    <div class="bg-glow-bottom"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          NV
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-slate-100 tracking-tight leading-tight group-hover:text-sky-400 transition-colors">NVOS</span>
+          <span class="text-xs text-slate-400 font-mono">@mechanoid7</span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-4 sm:gap-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-white transition-colors hidden sm:inline-block">Skills</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        <a href="https://github.com/mechanoid7" target="_blank" rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors" title="GitHub Profile">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 sm:py-28">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="badge-highlight mb-6">
+            <span class="badge-pulse-dot"></span>
+            Software & Frontend Developer
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-tight">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-indigo-400">NVOS</span>
+          </h1>
+
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed">
+            Software engineer specializing in modern web and mobile applications. My primary direction is <strong class="text-white font-semibold">Angular</strong> and frontend engineering, coupled with native Android development. Focused on clean architecture, high performance, and intuitive UX.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#projects" class="px-6 py-3.5 bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+              <span>View Projects</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <a href="https://mechanoid7.github.io/fuel-counter-site/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 font-medium rounded-xl transition-all inline-flex items-center gap-2">
+              <span>Fuel Counter</span>
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="px-6 py-3.5 text-slate-300 hover:text-white font-medium rounded-xl transition-colors">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-16 border-t border-slate-800/80 bg-slate-900/40">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <h2 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Featured Work</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-white">Selected Projects</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8">
+
+          <!-- Fuel Counter Card -->
+          <div class="project-card relative group bg-gradient-to-b from-slate-900 to-slate-900/80 border border-slate-800 hover:border-sky-500/50 rounded-2xl p-6 sm:p-8 hover:shadow-2xl hover:shadow-sky-500/10">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+
+              <div class="flex items-start gap-4 sm:gap-5">
+                <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center p-3 text-white shadow-lg shadow-sky-500/20 shrink-0">
+                  <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 14V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-2m-2-8h.01M17 10h.01M9 7h6M9 11h3m5 0v3a2 2 0 002 2h1a1 1 0 001-1v-4a2 2 0 00-2-2h-2z" />
+                  </svg>
+                </div>
+
+                <div>
+                  <div class="flex items-center gap-3 flex-wrap">
+                    <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                      Fuel Counter
+                    </h3>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                      Live on Google Play
+                    </span>
+                  </div>
+                  <p class="text-sm font-mono text-slate-400 mt-1">Smart Fuel & Mileage Tracker for Android</p>
+
+                  <p class="mt-4 text-slate-300 leading-relaxed text-base">
+                    A comprehensive Android application for monitoring fuel economy, mileage, and maintenance expenses for cars and motorcycles. Built with an offline-first architecture, privacy-oriented design, and an intuitive user interface.
+                  </p>
+
+                  <!-- Tags -->
+                  <div class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-slate-300">
+                    <span class="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">Android</span>
+                    <span class="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">Offline-First</span>
+                    <span class="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">Vehicle Analytics</span>
+                    <span class="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">Landing Page</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Links Bar -->
+            <div class="mt-8 pt-6 border-t border-slate-800 flex flex-wrap items-center gap-3 sm:gap-4">
+              <a href="https://mechanoid7.github.io/fuel-counter-site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold rounded-xl shadow-sm transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span>Visit Project Website</span>
+              </a>
+
+              <a href="https://play.google.com/store/apps/details?id=com.nvos.fuelcounter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold rounded-xl border border-slate-700 transition-colors">
+                <svg class="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.793 12 3.61 22.186a2.001 2.001 0 0 1-1.077-1.782V3.596c0-.752.417-1.437 1.076-1.782zM15.207 13.414l2.793 2.793-13.88 8.014 11.087-10.807zM15.207 10.586L4.12 -.221l13.88 8.014-2.793 2.793zM16.621 12l4.896 2.827a1.996 1.996 0 0 0 0-3.654L16.621 12z"/>
+                </svg>
+                <span>Get on Google Play</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- More Projects placeholder -->
+          <div class="border border-dashed border-slate-800 rounded-2xl p-6 sm:p-8 text-center bg-slate-900/20">
+            <h4 class="text-lg font-semibold text-slate-300">More Projects in Progress</h4>
+            <p class="text-sm text-slate-400 mt-2 max-w-md mx-auto">
+              Active developments in Angular enterprise web applications, tooling, and new mobile products. Check back soon or visit my GitHub profile.
+            </p>
+            <a href="https://github.com/mechanoid7?tab=repositories" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm text-sky-400 hover:text-sky-300 font-medium">
+              <span>View GitHub repositories</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologies -->
+    <section id="skills" class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <h2 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Technical Expertise</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-white">Core Skills & Tech Stack</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Web & Frontend (Angular Primary Focus) -->
+          <div class="bg-slate-900/60 border border-sky-500/30 rounded-2xl p-6 relative group hover:border-sky-500/60 transition-colors">
+            <div class="absolute top-4 right-4">
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                Primary Direction
+              </span>
+            </div>
+
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+
+            <h3 class="font-bold text-lg text-white">Web & Frontend</h3>
+            <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+              <strong class="text-white">Angular</strong> is my main expertise and focal point. Extensive experience building scalable single-page applications with TypeScript, RxJS, signals, reactive forms, modern component architectures, and Tailwind CSS.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5 text-xs text-sky-300 font-mono">
+              <span class="px-2 py-0.5 bg-sky-950/70 border border-sky-800/60 rounded">Angular</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">TypeScript</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">RxJS</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">Tailwind CSS</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">HTML5/CSS3</span>
+            </div>
+          </div>
+
+          <!-- Mobile Development -->
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+
+            <h3 class="font-bold text-lg text-white">Mobile Development</h3>
+            <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+              Native Android application engineering. Focus on offline-first databases, responsive mobile layouts, clean architecture patterns, battery and memory efficiency, and Google Play publication.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5 text-xs text-indigo-300 font-mono">
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">Android</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">Offline-First</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">Google Play</span>
+            </div>
+          </div>
+
+          <!-- Tooling & DevOps -->
+          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+
+            <h3 class="font-bold text-lg text-white">DevOps & Tooling</h3>
+            <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+              Proficient with Git version control, GitHub Actions, GitHub Pages, JetBrains WebStorm, Android Studio, AdMob integration, performance testing, and build tools.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5 text-xs text-cyan-300 font-mono">
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">Git / GitHub</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">WebStorm</span>
+              <span class="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 rounded">AdMob</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 border-t border-slate-800/80 bg-slate-900/30">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Get in Touch</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-white">Let's Connect</p>
+          <p class="mt-4 text-slate-300 leading-relaxed">
+            Interested in collaboration, projects, or frontend discussions? Feel free to reach out via email or explore my public repositories on GitHub.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="mailto:nvos.dev@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-sky-500 hover:bg-sky-400 text-white font-semibold rounded-xl transition-colors shadow-lg shadow-sky-500/20">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>nvos.dev@gmail.com</span>
+            </a>
+
+            <a href="https://github.com/mechanoid7" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-xl transition-colors">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub @mechanoid7</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <span>&copy; 2026 NVOS (@mechanoid7).</span>
+        <span>•</span>
+        <a href="https://mechanoid7.github.io/fuel-counter-site/" class="hover:text-slate-300 transition-colors">Fuel Counter</a>
+      </div>
+      <div>
+        Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline">GitHub Pages</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

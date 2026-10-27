@@ -1,20 +1,24 @@
-# mechanoid7.github.io
+# NVOS — Developer Portfolio
 
-Official personal portfolio website of **NVOS** (`@mechanoid7`), hosted on [GitHub Pages](https://mechanoid7.github.io/).
+Welcome to the personal portfolio website of **NVOS** ([@mechanoid7](https://github.com/mechanoid7)), hosted live at:  
+👉 **[https://mechanoid7.github.io](https://mechanoid7.github.io/)**
 
-## Overview
-- **Developer:** NVOS
-- **Focus:** Angular & modern Web Frontend development, Android mobile development
-- **Featured Project:** [Fuel Counter](https://mechanoid7.github.io/fuel-counter-site/) — vehicle fuel & expense tracker ([Google Play](https://play.google.com/store/apps/details?id=com.nvos.fuelcounter))
-- **Verification:** Includes Google Site Verification token for search console & site management
+---
 
-## Deployment (GitHub Pages)
+### About
+Software and Frontend developer specializing in building scalable web and mobile applications. Primary focus is **Angular** and modern web ecosystems, alongside native Android development.
 
-The website is served automatically by GitHub Pages from the root directory (`/`):
+### Featured Projects
+- **[Fuel Counter](https://mechanoid7.github.io/fuel-counter-site/)** — Smart fuel economy, mileage, and vehicle maintenance expense tracker for Android. Available on [Google Play](https://play.google.com/store/apps/details?id=com.nvos.fuelcounter).
 
-```bash
-git add .
-git commit -m "Update portfolio: English localization, NVOS pseudonym, Angular focus"
-git push origin master
-```
-*(If your primary branch is `main`, replace `master` with `main`).*
+### Core Stack
+- **Web & Frontend:** Angular, TypeScript, RxJS, Tailwind CSS, HTML5/CSS3
+- **Mobile:** Android, Kotlin, Offline-First Architecture
+- **Tooling:** Git, GitHub Pages, JetBrains WebStorm, Android Studio
+
+---
+
+### Connect
+- **Live Site:** [mechanoid7.github.io](https://mechanoid7.github.io/)
+- **GitHub:** [mechanoid7](https://github.com/mechanoid7)
+- **Email:** [nvos.dev@gmail.com](mailto:nvos.dev@gmail.com)
